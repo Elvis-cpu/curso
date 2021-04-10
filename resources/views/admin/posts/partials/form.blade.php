@@ -1,5 +1,5 @@
 <div class="form-group">
-    {!! Form::label('name', 'Nombre') !!}
+    <h2 class="h5">Nombre:</h2>
     {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el nombre del post']) !!}
     @error('name')
         <span class="text-danger">{{ $message }}</span>
@@ -7,7 +7,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('slug', 'Slug') !!}
+    <h2 class="h5">Slug:</h2>
     {!! Form::text('slug', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el slug del post', 'readonly']) !!}
     @error('slug')
         <span class="text-danger">{{ $message }}</span>
@@ -15,7 +15,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('category_id', 'Categorias') !!}
+    <h2 class="h5">Categorias</h2>
     {!! Form::select('category_id', $categories, null, ['class' => 'form-control']) !!}
 
     @error('category_id')
@@ -25,7 +25,7 @@
 </div>
 
 <div class="form-group">
-    <p class="font-weight-bold">Etiquetas</p>
+    <h2 class="h5">Etiquetas</h2>
 
     @foreach ($tags as $tag)
 
@@ -44,7 +44,7 @@
 
 <div class="form-group">
 
-    <p class="font-weight-bold">Estado</p>
+    <h2 class="h5">Estado</h2>
     <label >
         {!! Form::radio('status', 1, true, ) !!}
         Borrador
@@ -62,7 +62,7 @@
 </div>
 
 <div class="form-group">
-    <p class="font-weight-bold">Imagen</p>
+    <h2 class="h5">Imagen:</h2>
     <div class="row mb-3">
         <div class="col">
             <div class="image-wrapper">
@@ -79,7 +79,7 @@
         <div class="col">
 
             <div class="form-group">
-                {!! Form::label('file', 'Imagen que se mostrara en el post') !!}
+                <h2 class="h5">Imagen que se mostrara en el post</h2>
                 {!! Form::file('file', ['class' => 'form-control-file', 'accept' => 'image/*']) !!}           
                  @error('file')
                 <span class="text-danger">{{ $message }}</span>
@@ -92,7 +92,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('extract', 'Extracto') !!}
+    <h2 class="h5">Estracto:</h2>
     {!! Form::textarea('extract', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el extracto del post']) !!}
     @error('extract')
         <span class="text-danger">{{ $message }}</span>
@@ -101,7 +101,8 @@
 
 
 <div class="form-group">
-    {!! Form::label('body', 'Cuerpo') !!}
+    {
+        <h2 class="h5">Cuerpo:</h2>
     {!! Form::textarea('body', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el Cuerpo del post']) !!}
     @error('body')
         <span class="text-danger">{{ $message }}</span>

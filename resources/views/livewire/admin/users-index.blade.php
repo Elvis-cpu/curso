@@ -1,5 +1,6 @@
-<div>
+<div>        
     <div class="card">
+
 
         <div class="card-header">
             <input wire:model="search" class="form-control" placeholder="Buscar el nombre del Usuario">

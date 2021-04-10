@@ -15,6 +15,8 @@
     </div>
      
  @endif
+
+ 
 @livewire('admin.posts-index')
 
 

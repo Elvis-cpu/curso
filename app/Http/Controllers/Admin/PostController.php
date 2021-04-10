@@ -22,17 +22,14 @@ class PostController extends Controller
 
     }
 
-    public function obtenerDatos()
-    {
-        $id= 1;
-        $posts = Post::where('id', $id);
-        return view('admin.posts.index', compact('posts'));
-    }
 
     public function index()
     {
-        $posts = Post::all();
-        return view('admin.posts.index', compact('posts'));
+
+           $posts = Post::all(); 
+    
+         return view('admin.posts.index', compact('posts'));
+        
     }
 
     public function show(Post $post){

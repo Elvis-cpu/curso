@@ -3,6 +3,8 @@
 @section('title', 'administrador')
 
 @section('content_header')
+
+ 
     <h1>Editar usuarios</h1>
 @stop
 
@@ -16,10 +18,12 @@
 
         <div class="card">
             <div class="card-body">
+                
                 <p class="h5">Nombre:</p>
                 <p class="form-control">{{ $user->name }}</p>
 
                 <h2 class="h5">Listado de roles</h2>
+                
                 {!! Form::model($user, ['route' => ['admin.users.update', $user], 'method' => 'put']) !!}
 
 
