@@ -11,8 +11,7 @@
                 <thead>
                     <tr>
                             <th>Id</th>
-                            <th>Nombre</th>
-                            <th colspan="2"></th>
+                            <th colspan="3">Nombre</th>
                     </tr>
                 </thead>
 

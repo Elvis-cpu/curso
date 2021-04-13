@@ -1,5 +1,5 @@
 <div class="form-group">
-    <h2 class="h5">Nombre:</h2>
+    {!! Form::label('name', 'Nombre:') !!}
     {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el nombre del post']) !!}
     @error('name')
         <span class="text-danger">{{ $message }}</span>
@@ -7,7 +7,7 @@
 </div>
 
 <div class="form-group">
-    <h2 class="h5">Slug:</h2>
+    {!! Form::label('slug', 'Slug:') !!}
     {!! Form::text('slug', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el slug del post', 'readonly']) !!}
     @error('slug')
         <span class="text-danger">{{ $message }}</span>
@@ -101,7 +101,7 @@
 
 
 <div class="form-group">
-    {
+    
         <h2 class="h5">Cuerpo:</h2>
     {!! Form::textarea('body', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el Cuerpo del post']) !!}
     @error('body')

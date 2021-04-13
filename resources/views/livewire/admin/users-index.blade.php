@@ -14,8 +14,8 @@
                         <tr>
                             <th>Id</th>
                             <th>Nombre</th>
-                            <th>email</th>
-                            <th ></th>
+                            <th colspan="2">email</th>
+                            
                         </tr>
                     </thead>
 

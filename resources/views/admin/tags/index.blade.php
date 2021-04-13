@@ -28,8 +28,7 @@
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
-                        <th colspan="2"></th>
+                        <th colspan="3">Name</th>
                     </tr>
                 </thead>
                 <tbody>
